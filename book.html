@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <!-- Mirrored from yorkstreetspa.com/salon/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Aug 2024 06:37:05 GMT -->
+  <!-- Mirrored from yorkstreetspa.com/contact-us/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Aug 2024 06:36:36 GMT -->
   <!-- Added by HTTrack --><meta
     http-equiv="content-type"
     content="text/html;charset=UTF-8"
   /><!-- /Added by HTTrack -->
   <head>
     <meta charset="UTF-8" />
+    <script>
+      var gform;
+      gform ||
+        (document.addEventListener('gform_main_scripts_loaded', function () {
+          gform.scriptsLoaded = !0;
+        }),
+        window.addEventListener('DOMContentLoaded', function () {
+          gform.domLoaded = !0;
+        }),
+        (gform = {
+          domLoaded: !1,
+          scriptsLoaded: !1,
+          initializeOnLoaded: function (o) {
+            gform.domLoaded && gform.scriptsLoaded
+              ? o()
+              : !gform.domLoaded && gform.scriptsLoaded
+              ? window.addEventListener('DOMContentLoaded', o)
+              : document.addEventListener('gform_main_scripts_loaded', o);
+          },
+          hooks: { action: {}, filter: {} },
+          addAction: function (o, n, r, t) {
+            gform.addHook('action', o, n, r, t);
+          },
+          addFilter: function (o, n, r, t) {
+            gform.addHook('filter', o, n, r, t);
+          },
+          doAction: function (o) {
+            gform.doHook('action', o, arguments);
+          },
+          applyFilters: function (o) {
+            return gform.doHook('filter', o, arguments);
+          },
+          removeAction: function (o, n) {
+            gform.removeHook('action', o, n);
+          },
+          removeFilter: function (o, n, r) {
+            gform.removeHook('filter', o, n, r);
+          },
+          addHook: function (o, n, r, t, i) {
+            null == gform.hooks[o][n] && (gform.hooks[o][n] = []);
+            var e = gform.hooks[o][n];
+            null == i && (i = n + '_' + e.length),
+              gform.hooks[o][n].push({
+                tag: i,
+                callable: r,
+                priority: (t = null == t ? 10 : t),
+              });
+          },
+          doHook: function (n, o, r) {
+            var t;
+            if (
+              ((r = Array.prototype.slice.call(r, 1)),
+              null != gform.hooks[n][o] &&
+                ((o = gform.hooks[n][o]).sort(function (o, n) {
+                  return o.priority - n.priority;
+                }),
+                o.forEach(function (o) {
+                  'function' != typeof (t = o.callable) && (t = window[t]),
+                    'action' == n
+                      ? t.apply(null, r)
+                      : (r[0] = t.apply(null, r));
+                })),
+              'filter' == n)
+            )
+              return r[0];
+          },
+          removeHook: function (o, n, t, i) {
+            var r;
+            null != gform.hooks[o][n] &&
+              ((r = (r = gform.hooks[o][n]).filter(function (o, n, r) {
+                return !!(
+                  (null != i && i != o.tag) ||
+                  (null != t && t != o.priority)
+                );
+              })),
+              (gform.hooks[o][n] = r));
+          },
+        }));
+    </script>
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
@@ -22,76 +102,77 @@
     />
 
     <!-- This site is optimized with the Yoast SEO plugin v23.0 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>Ottawa Hair Salon - York Street Spa - York Street Spa</title>
+    <title>Book - York Street Spa</title>
     <meta
       name="description"
-      content="York Street Spa is an Ottawa hair salon offering expert hair stylist services, colour and perms and much more. We are proud to be an Aveda lifestyle salon. Contact us!"
+      content="If you want the best salon &amp; spa experience available in Ottawa, contact York Street Spa to schedule a visit! Our expert team offers the best service in town."
     />
     <link rel="canonical" href="index.html" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
-    <meta
-      property="og:title"
-      content="Ottawa Hair Salon - York Street Spa - York Street Spa"
-    />
+    <meta property="og:title" content="Book - York Street Spa" />
     <meta
       property="og:description"
-      content="York Street Spa is an Ottawa hair salon offering expert hair stylist services, colour and perms and much more. We are proud to be an Aveda lifestyle salon. Contact us!"
+      content="If you want the best salon &amp; spa experience available in Ottawa, contact York Street Spa to schedule a visit! Our expert team offers the best service in town."
     />
-    <meta property="og:url" content="https://yorkstreetspa.com/salon/" />
+    <meta property="og:url" content="https://yorkstreetspa.com/book/" />
     <meta property="og:site_name" content="YSS" />
     <meta
       property="article:modified_time"
-      content="2024-07-26T14:01:04+00:00"
+      content="2024-05-23T15:21:14+00:00"
     />
     <meta
       property="og:image"
-      content="https://yorkstreetspa.com/wp-content/uploads/2023/12/50536327_296564444376269_4450438033598653538_n.jpg"
+      content="http://yss.revieweasy.ca/wp-content/uploads/2024/01/P4113479.jpg"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:label1" content="Est. reading time" />
-    <meta name="twitter:data1" content="3 minutes" />
+    <meta name="twitter:data1" content="1 minute" />
+    <link
+      rel="stylesheet"
+      href="./wp-content/plugins/elementor/assets/css/widget-icon-list.min.css"
+    />
     <script type="application/ld+json" class="yoast-schema-graph">
       {
         "@context": "https://schema.org",
         "@graph": [
           {
             "@type": "WebPage",
-            "@id": "https://yorkstreetspa.com/salon/",
-            "url": "https://yorkstreetspa.com/salon/",
-            "name": "Ottawa Hair Salon - York Street Spa - York Street Spa",
+            "@id": "https://yorkstreetspa.com/contact-us/",
+            "url": "https://yorkstreetspa.com/contact-us/",
+            "name": "Contact Us - York Street Spa",
             "isPartOf": { "@id": "https://yorkstreetspa.com/#website" },
             "primaryImageOfPage": {
-              "@id": "https://yorkstreetspa.com/salon/#primaryimage"
+              "@id": "https://yorkstreetspa.com/contact-us/#primaryimage"
             },
-            "image": { "@id": "https://yorkstreetspa.com/salon/#primaryimage" },
-            "thumbnailUrl": "https://yorkstreetspa.com/wp-content/uploads/2023/12/50536327_296564444376269_4450438033598653538_n.jpg",
-            "datePublished": "2023-12-28T11:55:26+00:00",
-            "dateModified": "2024-07-26T14:01:04+00:00",
-            "description": "York Street Spa is an Ottawa hair salon offering expert hair stylist services, colour and perms and much more. We are proud to be an Aveda lifestyle salon. Contact us!",
+            "image": {
+              "@id": "https://yorkstreetspa.com/contact-us/#primaryimage"
+            },
+            "thumbnailUrl": "http://yss.revieweasy.ca/wp-content/uploads/2024/01/P4113479.jpg",
+            "datePublished": "2024-01-02T19:54:51+00:00",
+            "dateModified": "2024-05-23T15:21:14+00:00",
+            "description": "If you want the best salon & spa experience available in Ottawa, contact York Street Spa to schedule a visit! Our expert team offers the best service in town.",
             "breadcrumb": {
-              "@id": "https://yorkstreetspa.com/salon/#breadcrumb"
+              "@id": "https://yorkstreetspa.com/contact-us/#breadcrumb"
             },
             "inLanguage": "en-US",
             "potentialAction": [
               {
                 "@type": "ReadAction",
-                "target": ["https://yorkstreetspa.com/salon/"]
+                "target": ["https://yorkstreetspa.com/contact-us/"]
               }
             ]
           },
           {
             "@type": "ImageObject",
             "inLanguage": "en-US",
-            "@id": "https://yorkstreetspa.com/salon/#primaryimage",
-            "url": "https://yorkstreetspa.com/wp-content/uploads/2023/12/50536327_296564444376269_4450438033598653538_n.jpg",
-            "contentUrl": "https://yorkstreetspa.com/wp-content/uploads/2023/12/50536327_296564444376269_4450438033598653538_n.jpg",
-            "width": 553,
-            "height": 553
+            "@id": "https://yorkstreetspa.com/contact-us/#primaryimage",
+            "url": "http://yss.revieweasy.ca/wp-content/uploads/2024/01/P4113479.jpg",
+            "contentUrl": "http://yss.revieweasy.ca/wp-content/uploads/2024/01/P4113479.jpg"
           },
           {
             "@type": "BreadcrumbList",
-            "@id": "https://yorkstreetspa.com/salon/#breadcrumb",
+            "@id": "https://yorkstreetspa.com/contact-us/#breadcrumb",
             "itemListElement": [
               {
                 "@type": "ListItem",
@@ -99,7 +180,7 @@
                 "name": "Home",
                 "item": "https://yorkstreetspa.com/"
               },
-              { "@type": "ListItem", "position": 2, "name": "Salon" }
+              { "@type": "ListItem", "position": 2, "name": "Contact Us" }
             ]
           },
           {
@@ -147,13 +228,13 @@
       rel="alternate"
       type="application/rss+xml"
       title="YSS &raquo; Feed"
-      href="../feed/index.html"
+      href="./feed/index.html"
     />
     <link
       rel="alternate"
       type="application/rss+xml"
       title="YSS &raquo; Comments Feed"
-      href="../comments/feed/index.html"
+      href="./comments/feed/index.html"
     />
     <script>
       window._wpemojiSettings = {
@@ -715,79 +796,103 @@
     <link
       rel="stylesheet"
       id="twentyseventeen-fonts-css"
-      href="../wp-content/themes/twentyseventeen/assets/fonts/font-libre-franklin6a62.css?ver=20230328"
+      href="./wp-content/themes/twentyseventeen/assets/fonts/font-libre-franklin6a62.css?ver=20230328"
       media="all"
     />
     <link
       rel="stylesheet"
       id="twentyseventeen-style-css"
-      href="../wp-content/themes/twentyseventeen/style2a09.css?ver=20231107"
+      href="./wp-content/themes/twentyseventeen/style2a09.css?ver=20231107"
       media="all"
     />
     <link
       rel="stylesheet"
       id="twentyseventeen-block-style-css"
-      href="../wp-content/themes/twentyseventeen/assets/css/blocks1cd1.css?ver=20220912"
+      href="./wp-content/themes/twentyseventeen/assets/css/blocks1cd1.css?ver=20220912"
       media="all"
     />
     <link
       rel="stylesheet"
       id="elementor-frontend-css"
-      href="../wp-content/plugins/elementor/assets/css/frontend-lite.min5f06.css?ver=3.23.2"
+      href="./wp-content/plugins/elementor/assets/css/frontend-lite.min5f06.css?ver=3.23.2"
       media="all"
     />
     <link
       rel="stylesheet"
       id="swiper-css"
-      href="../wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min94a4.css?ver=8.4.5"
+      href="./wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min94a4.css?ver=8.4.5"
       media="all"
     />
     <link
       rel="stylesheet"
       id="elementor-post-44-css"
-      href="../wp-content/uploads/elementor/css/post-44db14.css?ver=1721750977"
+      href="./wp-content/uploads/elementor/css/post-44db14.css?ver=1721750977"
       media="all"
     />
     <link
       rel="stylesheet"
       id="elementor-pro-css"
-      href="../wp-content/plugins/elementor-pro/assets/css/frontend-lite.minaad7.css?ver=3.18.2"
+      href="./wp-content/plugins/elementor-pro/assets/css/frontend-lite.minaad7.css?ver=3.18.2"
       media="all"
     />
     <link
       rel="stylesheet"
       id="elementor-global-css"
-      href="../wp-content/uploads/elementor/css/globaldb14.css?ver=1721750977"
+      href="./wp-content/uploads/elementor/css/globaldb14.css?ver=1721750977"
       media="all"
     />
     <link
       rel="stylesheet"
-      id="elementor-post-453-css"
-      href="../wp-content/uploads/elementor/css/post-453deca.css?ver=1722002500"
+      id="elementor-post-1317-css"
+      href="./wp-content/uploads/elementor/css/post-1317ef64.css?ver=1721751090"
       media="all"
     />
     <link
       rel="stylesheet"
       id="elementor-post-387-css"
-      href="../wp-content/uploads/elementor/css/post-387db14.css?ver=1721750977"
+      href="./wp-content/uploads/elementor/css/post-387db14.css?ver=1721750977"
       media="all"
     />
     <link
       rel="stylesheet"
       id="elementor-post-54-css"
-      href="../wp-content/uploads/elementor/css/post-54db14.css?ver=1721750977"
+      href="./wp-content/uploads/elementor/css/post-54db14.css?ver=1721750977"
       media="all"
     />
     <link
       rel="stylesheet"
       id="elementor-post-368-css"
-      href="../wp-content/uploads/elementor/css/post-368db14.css?ver=1721750977"
+      href="./wp-content/uploads/elementor/css/post-368db14.css?ver=1721750977"
       media="all"
     />
     <link
       rel="stylesheet"
       id="elementor-post-445-css"
-      href="../wp-content/uploads/elementor/css/post-44545c3.css?ver=1721751086"
+      href="./wp-content/uploads/elementor/css/post-44545c3.css?ver=1721751086"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="gform_basic-css"
+      href="./wp-content/plugins/gravityforms/assets/css/dist/basic.minfae6.css?ver=2.8.14"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="gform_theme_components-css"
+      href="./wp-content/plugins/gravityforms/assets/css/dist/theme-components.minfae6.css?ver=2.8.14"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="gform_theme_ie11-css"
+      href="./wp-content/plugins/gravityforms/assets/css/dist/theme-ie11.minfae6.css?ver=2.8.14"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="gform_theme-css"
+      href="./wp-content/plugins/gravityforms/assets/css/dist/theme.minfae6.css?ver=2.8.14"
       media="all"
     />
     <link
@@ -798,11 +903,11 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <script
-      src="../wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1"
+      src="./wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1"
       id="jquery-core-js"
     ></script>
     <script
-      src="../wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1"
+      src="./wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1"
       id="jquery-migrate-js"
     ></script>
     <script id="twentyseventeen-global-js-extra">
@@ -812,34 +917,127 @@
       };
     </script>
     <script
-      src="../wp-content/themes/twentyseventeen/assets/js/globalb10e.js?ver=20211130"
+      src="./wp-content/themes/twentyseventeen/assets/js/globalb10e.js?ver=20211130"
       id="twentyseventeen-global-js"
       defer
       data-wp-strategy="defer"
     ></script>
-    <link rel="https://api.w.org/" href="../wp-json/index.html" />
+    <script
+      defer="defer"
+      src="./wp-content/plugins/gravityforms/js/jquery.json.minfae6.js?ver=2.8.14"
+      id="gform_json-js"
+    ></script>
+    <script id="gform_gravityforms-js-extra">
+      var gf_global = {
+        gf_currency_config: {
+          name: 'Canadian Dollar',
+          symbol_left: '$',
+          symbol_right: 'CAD',
+          symbol_padding: ' ',
+          thousand_separator: ',',
+          decimal_separator: '.',
+          decimals: 2,
+          code: 'CAD',
+        },
+        base_url:
+          'https:\/\/yorkstreetspa.com\/wp-content\/plugins\/gravityforms',
+        number_formats: [],
+        spinnerUrl:
+          'https:\/\/yorkstreetspa.com\/wp-content\/plugins\/gravityforms\/images\/spinner.svg',
+        version_hash: 'fe4a5153bd7d87e5bddb99ea2b231ede',
+        strings: {
+          newRowAdded: 'New row added.',
+          rowRemoved: 'Row removed',
+          formSaved:
+            'The form has been saved.  The content contains the link to return and complete the form.',
+        },
+      };
+      var gform_i18n = {
+        datepicker: {
+          days: {
+            monday: 'Mo',
+            tuesday: 'Tu',
+            wednesday: 'We',
+            thursday: 'Th',
+            friday: 'Fr',
+            saturday: 'Sa',
+            sunday: 'Su',
+          },
+          months: {
+            january: 'January',
+            february: 'February',
+            march: 'March',
+            april: 'April',
+            may: 'May',
+            june: 'June',
+            july: 'July',
+            august: 'August',
+            september: 'September',
+            october: 'October',
+            november: 'November',
+            december: 'December',
+          },
+          firstDay: 1,
+          iconText: 'Select date',
+        },
+      };
+      var gf_legacy_multi = { 1: '' };
+      var gform_gravityforms = {
+        strings: {
+          invalid_file_extension:
+            'This type of file is not allowed. Must be one of the following:',
+          delete_file: 'Delete this file',
+          in_progress: 'in progress',
+          file_exceeds_limit: 'File exceeds size limit',
+          illegal_extension: 'This type of file is not allowed.',
+          max_reached: 'Maximum number of files reached',
+          unknown_error:
+            'There was a problem while saving the file on the server',
+          currently_uploading: 'Please wait for the uploading to complete',
+          cancel: 'Cancel',
+          cancel_upload: 'Cancel this upload',
+          cancelled: 'Cancelled',
+        },
+        vars: {
+          images_url:
+            'https:\/\/yorkstreetspa.com\/wp-content\/plugins\/gravityforms\/images',
+        },
+      };
+    </script>
+    <script id="gform_gravityforms-js-before"></script>
+    <script
+      defer="defer"
+      src="./wp-content/plugins/gravityforms/js/gravityforms.minfae6.js?ver=2.8.14"
+      id="gform_gravityforms-js"
+    ></script>
+    <script
+      defer="defer"
+      src="./wp-content/plugins/gravityforms/assets/js/dist/utils.minbdb4.js?ver=50c7bea9c2320e16728e44ae9fde5f26"
+      id="gform_gravityforms_utils-js"
+    ></script>
+    <link rel="https://api.w.org/" href="./wp-json/index.html" />
     <link
       rel="alternate"
       type="application/json"
-      href="../wp-json/wp/v2/pages/453.json"
+      href="./wp-json/wp/v2/pages/1317.json"
     />
     <link
       rel="EditURI"
       type="application/rsd+xml"
       title="RSD"
-      href="../xmlrpc0db0.php?rsd"
+      href="./xmlrpc0db0.php?rsd"
     />
     <meta name="generator" content="WordPress 6.4.5" />
-    <link rel="shortlink" href="../index06d3.html?p=453" />
+    <link rel="shortlink" href="./index1e59.html?p=1317" />
     <link
       rel="alternate"
       type="application/json+oembed"
-      href="../wp-json/oembed/1.0/embed0b40.json?url=https%3A%2F%2Fyorkstreetspa.com%2Fsalon%2F"
+      href="./wp-json/oembed/1.0/embeda354.json?url=https%3A%2F%2Fyorkstreetspa.com%2Fcontact-us%2F"
     />
     <link
       rel="alternate"
       type="text/xml+oembed"
-      href="../wp-json/oembed/1.0/embed6d20?url=https%3A%2F%2Fyorkstreetspa.com%2Fsalon%2F&amp;format=xml"
+      href="./wp-json/oembed/1.0/embeda111?url=https%3A%2F%2Fyorkstreetspa.com%2Fcontact-us%2F&amp;format=xml"
     />
     <meta name="cdp-version" content="1.4.7" />
     <meta
@@ -877,7 +1075,7 @@
     </style>
   </head>
   <body
-    class="page-template-default page page-id-453 page-parent wp-custom-logo wp-embed-responsive has-header-image page-two-column colors-light elementor-default elementor-template-full-width elementor-kit-44 elementor-page elementor-page-453 elementor-page-445"
+    class="page-template-default page page-id-1317 wp-custom-logo wp-embed-responsive has-header-image page-two-column colors-light elementor-default elementor-template-full-width elementor-kit-44 elementor-page elementor-page-1317 elementor-page-445"
   >
     <div
       data-elementor-type="header"
@@ -1047,7 +1245,7 @@
                     <div class="elementor-button-wrapper">
                       <a
                         class="elementor-button elementor-button-link elementor-size-sm"
-                        href="../book.html"
+                        href="./book.html"
                         target="_blank"
                       >
                         <span class="elementor-button-content-wrapper">
@@ -1066,7 +1264,7 @@
     <div
       data-elementor-type="single-page"
       data-elementor-id="445"
-      class="elementor elementor-445 elementor-location-single post-453 page type-page status-publish hentry"
+      class="elementor elementor-445 elementor-location-single post-1317 page type-page status-publish hentry"
       data-elementor-post-type="elementor_library"
     >
       <div class="elementor-section-wrap">
@@ -1127,7 +1325,7 @@
                       }
                     </style>
                     <h1 class="elementor-heading-title elementor-size-default">
-                      Salon
+                      Book Online
                     </h1>
                   </div>
                 </div>
@@ -1315,13 +1513,13 @@
                   <div class="elementor-widget-container">
                     <link
                       rel="stylesheet"
-                      href="../wp-content/plugins/elementor-pro/assets/css/widget-theme-elements.min.css"
+                      href="./wp-content/plugins/elementor-pro/assets/css/widget-theme-elements.min.css"
                     />
                     <p id="breadcrumbs">
                       <span
-                        ><span><a href="../index.html">Home</a></span> »
+                        ><span><a href="./index.html">Home</a></span> »
                         <span class="breadcrumb_last" aria-current="page"
-                          >Salon</span
+                          >Book Online</span
                         ></span
                       >
                     </p>
@@ -1352,31 +1550,30 @@
                   <div class="elementor-widget-container">
                     <div
                       data-elementor-type="wp-page"
-                      data-elementor-id="453"
-                      class="elementor elementor-453"
+                      data-elementor-id="1317"
+                      class="elementor elementor-1317"
                       data-elementor-post-type="page"
                     >
                       <section
-                        class="elementor-section elementor-top-section elementor-element elementor-element-b4004d2 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                        data-id="b4004d2"
+                        class="elementor-section elementor-top-section elementor-element elementor-element-5ec81c3 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                        data-id="5ec81c3"
                         data-element_type="section"
                       >
                         <div
                           class="elementor-container elementor-column-gap-default"
                         >
                           <div
-                            class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-76e5acd"
-                            data-id="76e5acd"
+                            class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-bb2cc13"
+                            data-id="bb2cc13"
                             data-element_type="column"
                           >
                             <div
                               class="elementor-widget-wrap elementor-element-populated"
                             >
                               <div
-                                class="elementor-element elementor-element-33784a0 elementor-widget elementor-widget-image"
-                                data-id="33784a0"
+                                class="elementor-element elementor-element-37ebfdd elementor-widget elementor-widget-image"
+                                data-id="37ebfdd"
                                 data-element_type="widget"
-                                data-settings='{"_animation":"none"}'
                                 data-widget_type="image.default"
                               >
                                 <div class="elementor-widget-container">
@@ -1396,486 +1593,22 @@
                                       display: inline-block;
                                     }
                                   </style>
-                                  <img
-                                    fetchpriority="high"
-                                    fetchpriority="high"
-                                    decoding="async"
-                                    width="553"
-                                    height="553"
-                                    src="../wp-content/uploads/2023/12/50536327_296564444376269_4450438033598653538_n.jpg"
-                                    class="attachment-full size-full wp-image-459"
-                                    alt=""
-                                    srcset="
-                                      https://yorkstreetspa.com/wp-content/uploads/2023/12/50536327_296564444376269_4450438033598653538_n.jpg         553w,
-                                      https://yorkstreetspa.com/wp-content/uploads/2023/12/50536327_296564444376269_4450438033598653538_n-300x300.jpg 300w,
-                                      https://yorkstreetspa.com/wp-content/uploads/2023/12/50536327_296564444376269_4450438033598653538_n-150x150.jpg 150w,
-                                      https://yorkstreetspa.com/wp-content/uploads/2023/12/50536327_296564444376269_4450438033598653538_n-100x100.jpg 100w
-                                    "
-                                    sizes="100vw"
-                                  />
-                                </div>
-                              </div>
-                              <div
-                                class="elementor-element elementor-element-53e15ce elementor-absolute elementor-view-default elementor-widget elementor-widget-icon"
-                                data-id="53e15ce"
-                                data-element_type="widget"
-                                data-settings='{"_position":"absolute"}'
-                                data-widget_type="icon.default"
-                              >
-                                <div class="elementor-widget-container">
-                                  <div class="elementor-icon-wrapper">
-                                    <div class="elementor-icon">
-                                      <svg
-                                        aria-hidden="true"
-                                        class="e-font-icon-svg e-fas-square-full"
-                                        viewBox="0 0 512 512"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <path d="M512 512H0V0h512v512z"></path>
-                                      </svg>
-                                    </div>
-                                  </div>
+                                  <iframe
+                                    id="GrowEasy-Widget"
+                                    title="GrowEasy Widget"
+                                    name="GrowEasy-Widget"
+                                    src="https://book.demo.grow.salon/yorkstreetspa/yorkstreetspa"
+                                    width="100%"
+                                    height="800px"
+                                    allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; payment;"
+                                    allowpaymentrequest="true"
+                                    allowfullscreen="true"
+                                    allowtransparency="true"
+                                    style="border-width: 0"
+                                  ></iframe>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div
-                            class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-213ce42"
-                            data-id="213ce42"
-                            data-element_type="column"
-                          >
-                            <div
-                              class="elementor-widget-wrap elementor-element-populated"
-                            >
-                              <div
-                                class="elementor-element elementor-element-7027c92 elementor-widget elementor-widget-heading"
-                                data-id="7027c92"
-                                data-element_type="widget"
-                                data-widget_type="heading.default"
-                              >
-                                <div class="elementor-widget-container">
-                                  <h3
-                                    class="elementor-heading-title elementor-size-default"
-                                  >
-                                    Salon
-                                  </h3>
-                                </div>
-                              </div>
-                              <div
-                                class="elementor-element elementor-element-063c86d elementor-widget elementor-widget-text-editor"
-                                data-id="063c86d"
-                                data-element_type="widget"
-                                data-widget_type="text-editor.default"
-                              >
-                                <div class="elementor-widget-container">
-                                  <style>
-                                    /*! elementor - v3.23.0 - 23-07-2024 */
-                                    .elementor-widget-text-editor.elementor-drop-cap-view-stacked
-                                      .elementor-drop-cap {
-                                      background-color: #69727d;
-                                      color: #fff;
-                                    }
-                                    .elementor-widget-text-editor.elementor-drop-cap-view-framed
-                                      .elementor-drop-cap {
-                                      color: #69727d;
-                                      border: 3px solid;
-                                      background-color: transparent;
-                                    }
-                                    .elementor-widget-text-editor:not(
-                                        .elementor-drop-cap-view-default
-                                      )
-                                      .elementor-drop-cap {
-                                      margin-top: 8px;
-                                    }
-                                    .elementor-widget-text-editor:not(
-                                        .elementor-drop-cap-view-default
-                                      )
-                                      .elementor-drop-cap-letter {
-                                      width: 1em;
-                                      height: 1em;
-                                    }
-                                    .elementor-widget-text-editor
-                                      .elementor-drop-cap {
-                                      float: left;
-                                      text-align: center;
-                                      line-height: 1;
-                                      font-size: 50px;
-                                    }
-                                    .elementor-widget-text-editor
-                                      .elementor-drop-cap-letter {
-                                      display: inline-block;
-                                    }
-                                  </style>
-                                  <p>
-                                    <span style="font-weight: 400"
-                                      >Welcome to our Aveda Lifestyle Salon,
-                                      where beauty intertwines with expertise to
-                                      offer you an unparalleled experience. At
-                                      York Street Spa&#8217;s Ottawa Hair Salon,
-                                      each visit begins with a personalized
-                                      consultation, ensuring your stylist
-                                      selects the perfect look to complement
-                                      your features and lifestyle.
-                                    </span>
-                                  </p>
-                                  <p>
-                                    <span style="font-weight: 400"
-                                      >Enhancing your experience, indulge in a
-                                      complimentary ritual service, where you
-                                      can select from a range of pure flower and
-                                      plant aromas to alleviate stress and
-                                      tension through soothing scalp and
-                                      shoulder massages. Our aromaology
-                                      treatments, infused with pure flower and
-                                      plant essences, awaken your senses,
-                                      leaving you refreshed and
-                                      rejuvenated. </span
-                                    >
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                      <section
-                        class="elementor-section elementor-top-section elementor-element elementor-element-5793225 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                        data-id="5793225"
-                        data-element_type="section"
-                      >
-                        <div
-                          class="elementor-container elementor-column-gap-default"
-                        >
-                          <div
-                            class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5ae5f0d"
-                            data-id="5ae5f0d"
-                            data-element_type="column"
-                          >
-                            <div
-                              class="elementor-widget-wrap elementor-element-populated"
-                            >
-                              <div
-                                class="elementor-element elementor-element-0fe7bae elementor-widget elementor-widget-text-editor"
-                                data-id="0fe7bae"
-                                data-element_type="widget"
-                                data-widget_type="text-editor.default"
-                              >
-                                <div class="elementor-widget-container">
-                                  <p>
-                                    <span style="font-weight: 400"
-                                      >Our team remains at the forefront of the
-                                      industry by continuously honing their
-                                      skills, both nationally and
-                                      internationally, and staying abreast of
-                                      the latest fashion trends. All our
-                                      stylists are proficient in both cutting
-                                      and coloring services, ensuring every
-                                      aspect of your hair care needs is met with
-                                      precision and creativity. </span
-                                    >
-                                  </p>
-                                  <p>
-                                    <span style="font-weight: 400"
-                                      >Immerse yourself in relaxation with one
-                                      of our Aveda in-salon treatments,
-                                      featuring a soothing scalp massage that
-                                      complements the transformative experience
-                                      of having your hair expertly colored, cut,
-                                      and styled into a masterpiece. </span
-                                    >
-                                  </p>
-                                  <p>
-                                    <span style="font-weight: 400"
-                                      >In our salon, we believe in unlocking the
-                                      full potential of your hair, offering
-                                      expert cuts, colors, and styles that go
-                                      beyond mere services—they&#8217;re
-                                      experiences. Immerse yourself in the Aveda
-                                      aromatherapy ritual and discover the
-                                      difference. Contact us today to schedule
-                                      your appointment and embark on the
-                                      transformation you deserve.</span
-                                    >
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                      <section
-                        class="elementor-section elementor-top-section elementor-element elementor-element-4299b44 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                        data-id="4299b44"
-                        data-element_type="section"
-                      >
-                        <div
-                          class="elementor-container elementor-column-gap-default"
-                        >
-                          <div
-                            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-0d13777"
-                            data-id="0d13777"
-                            data-element_type="column"
-                          >
-                            <div
-                              class="elementor-widget-wrap elementor-element-populated"
-                            >
-                              <div
-                                class="elementor-element elementor-element-0660a55 elementor-widget elementor-widget-image"
-                                data-id="0660a55"
-                                data-element_type="widget"
-                                data-widget_type="image.default"
-                              >
-                                <div class="elementor-widget-container">
-                                  <img
-                                    decoding="async"
-                                    width="434"
-                                    height="508"
-                                    src="../wp-content/uploads/2023/12/67812921_357176711875002_6264233050112035771_n.jpg"
-                                    class="attachment-large size-large wp-image-466"
-                                    alt=""
-                                    srcset="
-                                      https://yorkstreetspa.com/wp-content/uploads/2023/12/67812921_357176711875002_6264233050112035771_n.jpg         434w,
-                                      https://yorkstreetspa.com/wp-content/uploads/2023/12/67812921_357176711875002_6264233050112035771_n-256x300.jpg 256w
-                                    "
-                                    sizes="100vw"
-                                  />
-                                </div>
-                              </div>
-                              <div
-                                class="elementor-element elementor-element-ea2e901 elementor-widget elementor-widget-heading"
-                                data-id="ea2e901"
-                                data-element_type="widget"
-                                data-widget_type="heading.default"
-                              >
-                                <div class="elementor-widget-container">
-                                  <h3
-                                    class="elementor-heading-title elementor-size-default"
-                                  >
-                                    <a href="../indexc471.html?page_id=2533"
-                                      >Cuts and Styles</a
-                                    >
-                                  </h3>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-c877073"
-                            data-id="c877073"
-                            data-element_type="column"
-                          >
-                            <div
-                              class="elementor-widget-wrap elementor-element-populated"
-                            >
-                              <div
-                                class="elementor-element elementor-element-8bd456a elementor-widget elementor-widget-image"
-                                data-id="8bd456a"
-                                data-element_type="widget"
-                                data-widget_type="image.default"
-                              >
-                                <div class="elementor-widget-container">
-                                  <img
-                                    decoding="async"
-                                    width="525"
-                                    height="701"
-                                    src="../wp-content/uploads/2023/12/241381834_580625039788664_4895809958479594173_n.jpg"
-                                    class="attachment-large size-large wp-image-509"
-                                    alt=""
-                                    srcset="
-                                      https://yorkstreetspa.com/wp-content/uploads/2023/12/241381834_580625039788664_4895809958479594173_n.jpg         640w,
-                                      https://yorkstreetspa.com/wp-content/uploads/2023/12/241381834_580625039788664_4895809958479594173_n-225x300.jpg 225w
-                                    "
-                                    sizes="100vw"
-                                  />
-                                </div>
-                              </div>
-                              <div
-                                class="elementor-element elementor-element-602e34e elementor-widget elementor-widget-heading"
-                                data-id="602e34e"
-                                data-element_type="widget"
-                                data-widget_type="heading.default"
-                              >
-                                <div class="elementor-widget-container">
-                                  <h3
-                                    class="elementor-heading-title elementor-size-default"
-                                  >
-                                    <a href="colouring/index.html">Colouring</a>
-                                  </h3>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-62afe5e"
-                            data-id="62afe5e"
-                            data-element_type="column"
-                          >
-                            <div
-                              class="elementor-widget-wrap elementor-element-populated"
-                            >
-                              <div
-                                class="elementor-element elementor-element-bebc416 elementor-widget elementor-widget-image"
-                                data-id="bebc416"
-                                data-element_type="widget"
-                                data-widget_type="image.default"
-                              >
-                                <div class="elementor-widget-container">
-                                  <img
-                                    loading="lazy"
-                                    loading="lazy"
-                                    decoding="async"
-                                    width="525"
-                                    height="701"
-                                    src="../wp-content/uploads/2023/12/IMG_20210731_142019_190-767x1024.jpg"
-                                    class="attachment-large size-large wp-image-529"
-                                    alt=""
-                                    srcset="
-                                      https://yorkstreetspa.com/wp-content/uploads/2023/12/IMG_20210731_142019_190-767x1024.jpg  767w,
-                                      https://yorkstreetspa.com/wp-content/uploads/2023/12/IMG_20210731_142019_190-225x300.jpg   225w,
-                                      https://yorkstreetspa.com/wp-content/uploads/2023/12/IMG_20210731_142019_190-768x1025.jpg  768w,
-                                      https://yorkstreetspa.com/wp-content/uploads/2023/12/IMG_20210731_142019_190.jpg          1124w
-                                    "
-                                    sizes="100vw"
-                                  />
-                                </div>
-                              </div>
-                              <div
-                                class="elementor-element elementor-element-674648f elementor-widget elementor-widget-heading"
-                                data-id="674648f"
-                                data-element_type="widget"
-                                data-widget_type="heading.default"
-                              >
-                                <div class="elementor-widget-container">
-                                  <h3
-                                    class="elementor-heading-title elementor-size-default"
-                                  >
-                                    <a href="treatment/index.html"
-                                      >Treatment
-                                    </a>
-                                  </h3>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                      <section
-                        class="elementor-section elementor-top-section elementor-element elementor-element-335b897 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                        data-id="335b897"
-                        data-element_type="section"
-                      >
-                        <div
-                          class="elementor-container elementor-column-gap-default"
-                        >
-                          <div
-                            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-5260c97"
-                            data-id="5260c97"
-                            data-element_type="column"
-                          >
-                            <div
-                              class="elementor-widget-wrap elementor-element-populated"
-                            >
-                              <div
-                                class="elementor-element elementor-element-de2a9e6 elementor-widget elementor-widget-image"
-                                data-id="de2a9e6"
-                                data-element_type="widget"
-                                data-widget_type="image.default"
-                              >
-                                <div class="elementor-widget-container">
-                                  <img
-                                    loading="lazy"
-                                    loading="lazy"
-                                    decoding="async"
-                                    width="525"
-                                    height="656"
-                                    src="../wp-content/uploads/2024/04/347435573_804149864087830_5107611795050521730_n-819x1024.jpg"
-                                    class="attachment-large size-large wp-image-1622"
-                                    alt=""
-                                    srcset="
-                                      https://yorkstreetspa.com/wp-content/uploads/2024/04/347435573_804149864087830_5107611795050521730_n-819x1024.jpg  819w,
-                                      https://yorkstreetspa.com/wp-content/uploads/2024/04/347435573_804149864087830_5107611795050521730_n-240x300.jpg   240w,
-                                      https://yorkstreetspa.com/wp-content/uploads/2024/04/347435573_804149864087830_5107611795050521730_n-768x961.jpg   768w,
-                                      https://yorkstreetspa.com/wp-content/uploads/2024/04/347435573_804149864087830_5107611795050521730_n.jpg          1080w
-                                    "
-                                    sizes="100vw"
-                                  />
-                                </div>
-                              </div>
-                              <div
-                                class="elementor-element elementor-element-179995a elementor-widget elementor-widget-heading"
-                                data-id="179995a"
-                                data-element_type="widget"
-                                data-widget_type="heading.default"
-                              >
-                                <div class="elementor-widget-container">
-                                  <h3
-                                    class="elementor-heading-title elementor-size-default"
-                                  >
-                                    <a href="protective-styles/index.html">
-                                      Braids, Locs & Twists</a
-                                    >
-                                  </h3>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-51a44bb"
-                            data-id="51a44bb"
-                            data-element_type="column"
-                          >
-                            <div
-                              class="elementor-widget-wrap elementor-element-populated"
-                            >
-                              <div
-                                class="elementor-element elementor-element-0a9800b elementor-widget elementor-widget-image"
-                                data-id="0a9800b"
-                                data-element_type="widget"
-                                data-widget_type="image.default"
-                              >
-                                <div class="elementor-widget-container">
-                                  <img
-                                    loading="lazy"
-                                    loading="lazy"
-                                    decoding="async"
-                                    width="525"
-                                    height="657"
-                                    src="../wp-content/uploads/2024/04/350318368_1780584305694344_1813246824536652431_n.jpg"
-                                    class="attachment-large size-large wp-image-1528"
-                                    alt=""
-                                    srcset="
-                                      https://yorkstreetspa.com/wp-content/uploads/2024/04/350318368_1780584305694344_1813246824536652431_n.jpg         809w,
-                                      https://yorkstreetspa.com/wp-content/uploads/2024/04/350318368_1780584305694344_1813246824536652431_n-240x300.jpg 240w,
-                                      https://yorkstreetspa.com/wp-content/uploads/2024/04/350318368_1780584305694344_1813246824536652431_n-768x962.jpg 768w
-                                    "
-                                    sizes="100vw"
-                                  />
-                                </div>
-                              </div>
-                              <div
-                                class="elementor-element elementor-element-cfa09e2 elementor-widget elementor-widget-heading"
-                                data-id="cfa09e2"
-                                data-element_type="widget"
-                                data-widget_type="heading.default"
-                              >
-                                <div class="elementor-widget-container">
-                                  <h3
-                                    class="elementor-heading-title elementor-size-default"
-                                  >
-                                    <a href="textured-services/index.html"
-                                      >Chemical Hair Services
-                                    </a>
-                                  </h3>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-68a994d"
-                            data-id="68a994d"
-                            data-element_type="column"
-                          >
-                            <div class="elementor-widget-wrap"></div>
                           </div>
                         </div>
                       </section>
@@ -2011,10 +1744,6 @@
                   data-widget_type="icon-list.default"
                 >
                   <div class="elementor-widget-container">
-                    <link
-                      rel="stylesheet"
-                      href="../wp-content/plugins/elementor/assets/css/widget-icon-list.min.css"
-                    />
                     <ul
                       class="elementor-icon-list-items elementor-inline-items"
                     >
@@ -2176,19 +1905,6 @@
                   data-widget_type="google_maps.default"
                 >
                   <div class="elementor-widget-container">
-                    <style>
-                      /*! elementor - v3.23.0 - 23-07-2024 */
-                      .elementor-widget-google_maps
-                        .elementor-widget-container {
-                        overflow: hidden;
-                      }
-                      .elementor-widget-google_maps .elementor-custom-embed {
-                        line-height: 0;
-                      }
-                      .elementor-widget-google_maps iframe {
-                        height: 300px;
-                      }
-                    </style>
                     <div class="elementor-custom-embed">
                       <iframe
                         loading="lazy"
@@ -2248,7 +1964,7 @@
                       <li
                         class="elementor-icon-list-item elementor-inline-item"
                       >
-                        <a href="../appointment-policies/index.html">
+                        <a href="./appointment-policies/index.html">
                           <span class="elementor-icon-list-text"
                             >Appointment Policies</span
                           >
@@ -2257,7 +1973,7 @@
                       <li
                         class="elementor-icon-list-item elementor-inline-item"
                       >
-                        <a href="../contact-us/index.html">
+                        <a href="index.html">
                           <span class="elementor-icon-list-text"
                             >Contact Us</span
                           >
@@ -2401,7 +2117,7 @@
                   <div class="elementor-widget-container">
                     <link
                       rel="stylesheet"
-                      href="../wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css"
+                      href="./wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css"
                     />
                     <nav
                       class="elementor-nav-menu--dropdown elementor-nav-menu__container"
@@ -2412,19 +2128,18 @@
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-394"
                         >
                           <a
-                            href="../index.html"
+                            href="./index.html"
                             class="elementor-item"
                             tabindex="-1"
                             >Home</a
                           >
                         </li>
                         <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-453 current_page_item menu-item-has-children menu-item-1078"
+                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1078"
                         >
                           <a
-                            href="index.html"
-                            aria-current="page"
-                            class="elementor-item elementor-item-active"
+                            href="./salon/index.html"
+                            class="elementor-item"
                             tabindex="-1"
                             >Salon</a
                           >
@@ -2433,7 +2148,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2827"
                             >
                               <a
-                                href="hair-styles/index.html"
+                                href="./salon/hair-styles/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Hair Styles</a
@@ -2443,7 +2158,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2819"
                             >
                               <a
-                                href="haircuts/index.html"
+                                href="./salon/haircuts/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Haircuts</a
@@ -2453,7 +2168,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"
                             >
                               <a
-                                href="curly-cuts-and-curly-styles/index.html"
+                                href="./salon/curly-cuts-and-curly-styles/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Curly Cuts and Curly Styles</a
@@ -2463,7 +2178,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2831"
                             >
                               <a
-                                href="hair-treatments/index.html"
+                                href="./salon/hair-treatments/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Hair Treatments</a
@@ -2473,7 +2188,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2623"
                             >
                               <a
-                                href="colouring/index.html"
+                                href="./salon/colouring/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Colouring</a
@@ -2483,7 +2198,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2620"
                             >
                               <a
-                                href="textured-services/index.html"
+                                href="./salon/textured-services/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Chemical Hair Services</a
@@ -2493,7 +2208,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2621"
                             >
                               <a
-                                href="protective-styles/index.html"
+                                href="./salon/protective-styles/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Braids, Locs &amp; Twists</a
@@ -2503,7 +2218,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2931"
                             >
                               <a
-                                href="hair-extensions/index.html"
+                                href="./salon/hair-extensions/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Hair Extensions</a
@@ -2515,7 +2230,7 @@
                           class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-396"
                         >
                           <a
-                            href="../spa/index.html"
+                            href="./spa/index.html"
                             class="elementor-item"
                             tabindex="-1"
                             >SPA</a
@@ -2525,7 +2240,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1887"
                             >
                               <a
-                                href="../facials/aveda-facial/index.html"
+                                href="./facials/aveda-facial/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Aveda Facial</a
@@ -2535,7 +2250,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-901"
                             >
                               <a
-                                href="../body/index.html"
+                                href="./body/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Body Treatments</a
@@ -2545,7 +2260,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1937"
                             >
                               <a
-                                href="../sauna/index.html"
+                                href="./sauna/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Sauna</a
@@ -2555,7 +2270,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-903"
                             >
                               <a
-                                href="../waxing/index.html"
+                                href="./waxing/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Waxing</a
@@ -2565,7 +2280,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1984"
                             >
                               <a
-                                href="../manicure/index.html"
+                                href="./manicure/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Manicure</a
@@ -2575,7 +2290,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2027"
                             >
                               <a
-                                href="../pedicure/index.html"
+                                href="./pedicure/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Pedicure</a
@@ -2585,7 +2300,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-898"
                             >
                               <a
-                                href="../lash-extension/index.html"
+                                href="./lash-extension/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Lash Extension</a
@@ -2595,7 +2310,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2057"
                             >
                               <a
-                                href="../lifting-tinting/index.html"
+                                href="./lifting-tinting/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Lifting &amp; Tinting</a
@@ -2605,7 +2320,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2074"
                             >
                               <a
-                                href="../makeup/index.html"
+                                href="./makeup/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Makeup</a
@@ -2615,7 +2330,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2093"
                             >
                               <a
-                                href="../microblading/index.html"
+                                href="./microblading/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Microblading</a
@@ -2627,7 +2342,7 @@
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2103"
                         >
                           <a
-                            href="../medi-spa-services/index.html"
+                            href="./medi-spa-services/index.html"
                             class="elementor-item"
                             tabindex="-1"
                             >Medi-Spa Services</a
@@ -2637,7 +2352,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2131"
                             >
                               <a
-                                href="../microneedling/index.html"
+                                href="./microneedling/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Microneedling</a
@@ -2647,7 +2362,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2144"
                             >
                               <a
-                                href="../cosmetic-injectables/index.html"
+                                href="./cosmetic-injectables/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Cosmetic injectables</a
@@ -2657,7 +2372,7 @@
                                   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2162"
                                 >
                                   <a
-                                    href="../cosmetic-injectables/botox-2/index.html"
+                                    href="./cosmetic-injectables/botox-2/index.html"
                                     class="elementor-sub-item"
                                     tabindex="-1"
                                     >Botox</a
@@ -2667,7 +2382,7 @@
                                   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2171"
                                 >
                                   <a
-                                    href="../cosmetic-injectables/dermal-filler/index.html"
+                                    href="./cosmetic-injectables/dermal-filler/index.html"
                                     class="elementor-sub-item"
                                     tabindex="-1"
                                     >Dermal filler</a
@@ -2679,7 +2394,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2241"
                             >
                               <a
-                                href="../laser-services/index.html"
+                                href="./laser-services/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Laser Services</a
@@ -2689,7 +2404,7 @@
                                   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2240"
                                 >
                                   <a
-                                    href="../laser-hair-removal/index.html"
+                                    href="./laser-hair-removal/index.html"
                                     class="elementor-sub-item"
                                     tabindex="-1"
                                     >Laser Hair Removal</a
@@ -2699,7 +2414,7 @@
                                   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2239"
                                 >
                                   <a
-                                    href="../skin-tightening/index.html"
+                                    href="./skin-tightening/index.html"
                                     class="elementor-sub-item"
                                     tabindex="-1"
                                     >Skin Tightening</a
@@ -2709,7 +2424,7 @@
                                   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2250"
                                 >
                                   <a
-                                    href="../skin-rejuvenation/index.html"
+                                    href="./skin-rejuvenation/index.html"
                                     class="elementor-sub-item"
                                     tabindex="-1"
                                     >Skin Rejuvenation</a
@@ -2719,7 +2434,7 @@
                                   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2269"
                                 >
                                   <a
-                                    href="../vascular-issues-pigmentation-and-lesion-treatment/index.html"
+                                    href="./vascular-issues-pigmentation-and-lesion-treatment/index.html"
                                     class="elementor-sub-item"
                                     tabindex="-1"
                                     >Vascular Issues, pigmentation and lesion
@@ -2734,7 +2449,7 @@
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2285"
                         >
                           <a
-                            href="../massage-therapy/index.html"
+                            href="./massage-therapy/index.html"
                             class="elementor-item"
                             tabindex="-1"
                             >Massage Therapy</a
@@ -2744,7 +2459,7 @@
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2299"
                         >
                           <a
-                            href="../spa-packages/index.html"
+                            href="./spa-packages/index.html"
                             class="elementor-item"
                             tabindex="-1"
                             >Spa Packages</a
@@ -2754,7 +2469,7 @@
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2315"
                         >
                           <a
-                            href="../wedding-services/index.html"
+                            href="./wedding-services/index.html"
                             class="elementor-item"
                             tabindex="-1"
                             >Wedding Services</a
@@ -2764,7 +2479,7 @@
                               class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1122"
                             >
                               <a
-                                href="../wedding/index.html"
+                                href="./wedding/index.html"
                                 class="elementor-sub-item"
                                 tabindex="-1"
                                 >Spa Day For Brides</a
@@ -2776,7 +2491,7 @@
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2329"
                         >
                           <a
-                            href="../catalog-retail/index.html"
+                            href="./catalog-retail/index.html"
                             class="elementor-item"
                             tabindex="-1"
                             >Catalog RETAIL</a
@@ -2786,7 +2501,7 @@
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2335"
                         >
                           <a
-                            href="../gift-cards/index.html"
+                            href="./gift-cards/index.html"
                             class="elementor-item"
                             tabindex="-1"
                             >Gift Cards</a
@@ -2796,7 +2511,7 @@
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2469"
                         >
                           <a
-                            href="../about-us/index.html"
+                            href="./about-us/index.html"
                             class="elementor-item"
                             tabindex="-1"
                             >About Us</a
@@ -2806,18 +2521,19 @@
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1313"
                         >
                           <a
-                            href="../appointment-policies/index.html"
+                            href="./appointment-policies/index.html"
                             class="elementor-item"
                             tabindex="-1"
                             >Policies</a
                           >
                         </li>
                         <li
-                          class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1371"
+                          class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1317 current_page_item menu-item-1371"
                         >
                           <a
-                            href="../contact-us/index.html"
-                            class="elementor-item"
+                            href="index.html"
+                            aria-current="page"
+                            class="elementor-item elementor-item-active"
                             tabindex="-1"
                             >Contact Us</a
                           >
@@ -2920,54 +2636,99 @@
     <link
       rel="stylesheet"
       id="e-animations-css"
-      href="../wp-content/plugins/elementor/assets/lib/animations/animations.min5f06.css?ver=3.23.2"
+      href="./wp-content/plugins/elementor/assets/lib/animations/animations.min5f06.css?ver=3.23.2"
       media="all"
     />
     <script
-      src="../wp-content/themes/twentyseventeen/assets/js/jquery.scrollTo4c71.js?ver=2.1.3"
+      src="./wp-content/themes/twentyseventeen/assets/js/jquery.scrollTo4c71.js?ver=2.1.3"
       id="jquery-scrollto-js"
       defer
       data-wp-strategy="defer"
     ></script>
     <script
-      src="../wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.minf269.js?ver=1.0.1"
-      id="smartmenus-js"
-    ></script>
-    <script
-      src="../wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.minaad7.js?ver=3.18.2"
-      id="elementor-pro-webpack-runtime-js"
-    ></script>
-    <script
-      src="../wp-content/plugins/elementor/assets/js/webpack.runtime.min5f06.js?ver=3.23.2"
-      id="elementor-webpack-runtime-js"
-    ></script>
-    <script
-      src="../wp-content/plugins/elementor/assets/js/frontend-modules.min5f06.js?ver=3.23.2"
-      id="elementor-frontend-modules-js"
-    ></script>
-    <script
-      src="../wp-includes/js/dist/vendor/wp-polyfill-inert.min0226.js?ver=3.1.2"
+      src="./wp-includes/js/dist/vendor/wp-polyfill-inert.min0226.js?ver=3.1.2"
       id="wp-polyfill-inert-js"
     ></script>
     <script
-      src="../wp-includes/js/dist/vendor/regenerator-runtime.min6c85.js?ver=0.14.0"
+      src="./wp-includes/js/dist/vendor/regenerator-runtime.min6c85.js?ver=0.14.0"
       id="regenerator-runtime-js"
     ></script>
     <script
-      src="../wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0"
+      src="./wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0"
       id="wp-polyfill-js"
     ></script>
     <script
-      src="../wp-includes/js/dist/hooks.min2ebd.js?ver=c6aec9a8d4e5a5d543a1"
+      src="./wp-includes/js/dist/dom-ready.minded6.js?ver=392bdd43726760d1f3ca"
+      id="wp-dom-ready-js"
+    ></script>
+    <script
+      src="./wp-includes/js/dist/hooks.min2ebd.js?ver=c6aec9a8d4e5a5d543a1"
       id="wp-hooks-js"
     ></script>
     <script
-      src="../wp-includes/js/dist/i18n.minf92f.js?ver=7701b0c3857f914212ef"
+      src="./wp-includes/js/dist/i18n.minf92f.js?ver=7701b0c3857f914212ef"
       id="wp-i18n-js"
     ></script>
     <script id="wp-i18n-js-after">
       wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
     </script>
+    <script
+      src="./wp-includes/js/dist/a11y.min866e.js?ver=7032343a947cfccf5608"
+      id="wp-a11y-js"
+    ></script>
+    <script
+      defer="defer"
+      src="./wp-content/plugins/gravityforms/js/jquery.textareaCounter.plugin.minfae6.js?ver=2.8.14"
+      id="gform_textarea_counter-js"
+    ></script>
+    <script
+      defer="defer"
+      src="./wp-content/plugins/gravityforms/js/jquery.maskedinput.minfae6.js?ver=2.8.14"
+      id="gform_masked_input-js"
+    ></script>
+    <script
+      defer="defer"
+      src="./wp-content/plugins/gravityforms/js/placeholders.jquery.minfae6.js?ver=2.8.14"
+      id="gform_placeholder-js"
+    ></script>
+    <script
+      defer="defer"
+      src="./wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.minca9e.js?ver=54e7080aa7a02c83aa61fae430b9d869"
+      id="gform_gravityforms_theme_vendors-js"
+    ></script>
+    <script id="gform_gravityforms_theme-js-extra">
+      var gform_theme_config = {
+        common: {
+          form: {
+            honeypot: { version_hash: 'fe4a5153bd7d87e5bddb99ea2b231ede' },
+          },
+        },
+        hmr_dev: '',
+        public_path:
+          'https:\/\/yorkstreetspa.com\/wp-content\/plugins\/gravityforms\/assets\/js\/dist\/',
+      };
+    </script>
+    <script
+      defer="defer"
+      src="./wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min00af.js?ver=bab19fd84843dabc070e73326d787910"
+      id="gform_gravityforms_theme-js"
+    ></script>
+    <script
+      src="./wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.minf269.js?ver=1.0.1"
+      id="smartmenus-js"
+    ></script>
+    <script
+      src="./wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.minaad7.js?ver=3.18.2"
+      id="elementor-pro-webpack-runtime-js"
+    ></script>
+    <script
+      src="./wp-content/plugins/elementor/assets/js/webpack.runtime.min5f06.js?ver=3.23.2"
+      id="elementor-webpack-runtime-js"
+    ></script>
+    <script
+      src="./wp-content/plugins/elementor/assets/js/frontend-modules.min5f06.js?ver=3.23.2"
+      id="elementor-frontend-modules-js"
+    ></script>
     <script id="elementor-pro-frontend-js-before">
       var ElementorProFrontendConfig = {
         ajaxurl: 'https:\/\/yorkstreetspa.com\/wp-admin\/admin-ajax.php',
@@ -3005,15 +2766,15 @@
       };
     </script>
     <script
-      src="../wp-content/plugins/elementor-pro/assets/js/frontend.minaad7.js?ver=3.18.2"
+      src="./wp-content/plugins/elementor-pro/assets/js/frontend.minaad7.js?ver=3.18.2"
       id="elementor-pro-frontend-js"
     ></script>
     <script
-      src="../wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2"
+      src="./wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2"
       id="elementor-waypoints-js"
     ></script>
     <script
-      src="../wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2"
+      src="./wp-includes/js/jquery/ui/core.min3f14.js?ver=1.13.2"
       id="jquery-ui-core-js"
     ></script>
     <script id="elementor-frontend-js-before">
@@ -3131,26 +2892,142 @@
           lightbox_description_src: 'description',
         },
         post: {
-          id: 453,
-          title:
-            'Ottawa%20Hair%20Salon%20-%20York%20Street%20Spa%20-%20York%20Street%20Spa',
+          id: 1317,
+          title: 'Contact%20Us%20-%20York%20Street%20Spa',
           excerpt: '',
           featuredImage: false,
         },
       };
     </script>
     <script
-      src="../wp-content/plugins/elementor/assets/js/frontend.min5f06.js?ver=3.23.2"
+      src="./wp-content/plugins/elementor/assets/js/frontend.min5f06.js?ver=3.23.2"
       id="elementor-frontend-js"
     ></script>
     <script
-      src="../wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.minaad7.js?ver=3.18.2"
+      src="./wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.minaad7.js?ver=3.18.2"
       id="pro-preloaded-elements-handlers-js"
     ></script>
     <script
-      src="../wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.minaad7.js?ver=3.18.2"
+      src="./wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.minaad7.js?ver=3.18.2"
       id="e-sticky-js"
     ></script>
+    <script>
+      gform.initializeOnLoaded(function () {
+        jQuery(document).on(
+          'gform_post_render',
+          function (event, formId, currentPage) {
+            if (formId == 1) {
+              if (!jQuery('#input_1_3+.ginput_counter').length) {
+                jQuery('#input_1_3').textareaCount({
+                  maxCharacterSize: 600,
+                  originalStyle: 'ginput_counter gfield_description',
+                  truncate: true,
+                  errorStyle: '',
+                  displayFormat: '#input of #max max characters',
+                });
+                jQuery('#input_1_3')
+                  .next('.ginput_counter')
+                  .attr('aria-live', 'polite');
+              }
+              if (typeof Placeholders != 'undefined') {
+                Placeholders.enable();
+              }
+              jQuery('#input_1_5')
+                .mask('(999) 999-9999')
+                .bind('keypress', function (e) {
+                  if (e.which == 13) {
+                    jQuery(this).blur();
+                  }
+                });
+            }
+          }
+        );
+        jQuery(document).on(
+          'gform_post_conditional_logic',
+          function (event, formId, fields, isInit) {}
+        );
+      });
+    </script>
+    <script>
+      gform.initializeOnLoaded(function () {
+        jQuery(document).trigger('gform_pre_post_render', [
+          {
+            formId: '1',
+            currentPage: '1',
+            abort: function () {
+              this.preventDefault();
+            },
+          },
+        ]);
+        if (event && event.defaultPrevented) {
+          return;
+        }
+        const gformWrapperDiv = document.getElementById('gform_wrapper_1');
+        if (gformWrapperDiv) {
+          const visibilitySpan = document.createElement('span');
+          visibilitySpan.id = 'gform_visibility_test_1';
+          gformWrapperDiv.insertAdjacentElement('afterend', visibilitySpan);
+        }
+        const visibilityTestDiv = document.getElementById(
+          'gform_visibility_test_1'
+        );
+        let postRenderFired = false;
+        function triggerPostRender() {
+          if (postRenderFired) {
+            return;
+          }
+          postRenderFired = true;
+          jQuery(document).trigger('gform_post_render', [1, 1]);
+          gform.utils.trigger({
+            event: 'gform/postRender',
+            native: false,
+            data: { formId: 1, currentPage: 1 },
+          });
+          if (visibilityTestDiv) {
+            visibilityTestDiv.parentNode.removeChild(visibilityTestDiv);
+          }
+        }
+        function debounce(func, wait, immediate) {
+          var timeout;
+          return function () {
+            var context = this,
+              args = arguments;
+            var later = function () {
+              timeout = null;
+              if (!immediate) func.apply(context, args);
+            };
+            var callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+          };
+        }
+        const debouncedTriggerPostRender = debounce(function () {
+          triggerPostRender();
+        }, 200);
+        if (visibilityTestDiv && visibilityTestDiv.offsetParent === null) {
+          const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+              if (
+                mutation.type === 'attributes' &&
+                visibilityTestDiv.offsetParent !== null
+              ) {
+                debouncedTriggerPostRender();
+                observer.disconnect();
+              }
+            });
+          });
+          observer.observe(document.body, {
+            attributes: true,
+            childList: false,
+            subtree: true,
+            attributeFilter: ['style', 'class'],
+          });
+        } else {
+          triggerPostRender();
+        }
+      });
+    </script>
     <svg
       style="position: absolute; width: 0; height: 0; overflow: hidden"
       version="1.1"
@@ -3479,5 +3356,5 @@
     </svg>
   </body>
 
-  <!-- Mirrored from yorkstreetspa.com/salon/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Aug 2024 06:37:09 GMT -->
+  <!-- Mirrored from yorkstreetspa.com/contact-us/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Aug 2024 06:36:49 GMT -->
 </html>
